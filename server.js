@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var articals = {
-articalone : {
+'artical-one' : {
         title: 'artical one | Sumanth Mylar',
         heading: 'artical one',
         date: 'august 03 2017',
@@ -27,7 +27,7 @@ articalone : {
                     
              `
                         },
-articaltwo : {
+'artical-two' : {
             title: 'artical two | Sumanth Mylar',
             heading: 'artical two',
             date: 'august 03 2027',
@@ -79,15 +79,13 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/artical-one', function (req, res) {
-  res.send(createTemplate(articalone));
+app.get('/:articalName', function (req, res) {
+    //articalName == artical-one
+    //articals[articalName == {} content object for artical one 
+    var articalName = req.params.articalName;
+  res.send(createTemplate(articals[articalName]));
 });
-app.get('/artical-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'articaltwo.html'));
-});
-app.get('/artical-three', function (req, res) {
-  res.send(path.join('this is the content for artical-three'));
-});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
