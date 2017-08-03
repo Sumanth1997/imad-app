@@ -7,11 +7,11 @@ app.use(morgan('combined'));
 
 
 var articals = {
-        articalone : {
-  title: 'artical one | Sumanth Mylar',
-  heading: 'artical one',
-  date: 'august 03 2017',
-  content: `
+articalone : {
+        title: 'artical one | Sumanth Mylar',
+        heading: 'artical one',
+        date: 'august 03 2017',
+        content: `
                     <p>
                         this is the content of artical one.this is the content of artical one.this is the content of artical one.
                         this is the content of artical one.this is the content of artical one.
@@ -27,11 +27,11 @@ var articals = {
                     
              `
                         },
-        articaltwo : {
-            title: 'artical two | Sumanth Mylar',
-  heading: 'artical two',
-  date: 'august 03 2027',
-  content: `
+articaltwo : {
+        title: 'artical two | Sumanth Mylar',
+        heading: 'artical two',
+        date: 'sept 03 2027',
+        content: `
                     <p>
                         this is the content of artical one.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.
                     </p>
