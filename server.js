@@ -6,8 +6,8 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articalone= {
-  title: 'artical one | SUmanth Mylar',
+var artical-one= {
+  title: 'artical-one | SUmanth Mylar',
   heading: 'artical one',
   date: 'august 03 2017',
   content: `
@@ -63,7 +63,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/artical-one', function (req, res) {
-  res.send(createTemplate(articaleone));
+  res.send(createTemplate(articale-one));
 });
 app.get('/artical-two', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'articaltwo.html'));
