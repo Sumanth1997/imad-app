@@ -23,7 +23,7 @@ var articalone= {
                         this is the content of artical one.this is the content of artical one.this is the content of artical one.
                         this is the content of artical one.this is the content of artical one.this is the content of artical one.
                     </p>
-                    `;
+                  `
 };
 function createTemplate (data) {
     var title=data.title;
