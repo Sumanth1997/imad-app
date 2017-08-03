@@ -30,7 +30,8 @@ function createTemplate (data) {
     var date = data.title;
     var heading = data.title;
     var content = data.title;
-var htmlTemplate=`
+    
+var htmlTemplate = `
 <!DOCTYPE html>
     <head>
         <title>
