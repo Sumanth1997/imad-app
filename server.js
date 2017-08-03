@@ -28,17 +28,17 @@ articalone : {
              `
                         },
 articaltwo : {
-        title: 'artical two | Sumanth Mylar',
-        heading: 'artical two',
-        date: 'sept 03 2027',
-        content: `
+            title: 'artical two | Sumanth Mylar',
+            heading: 'artical two',
+            date: 'august 03 2027',
+            content: `
                     <p>
                         this is the content of artical one.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.
                     </p>
                     <p>
-                        this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.
+                        this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.
                     </p>
-        },  
+        `},  
 };
 function createTemplate (data) {
     var title = data.title;
