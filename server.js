@@ -6,7 +6,8 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articalone = {
+var articals = {
+        articalone : {
   title: 'artical one | Sumanth Mylar',
   heading: 'artical one',
   date: 'august 03 2017',
@@ -23,7 +24,21 @@ var articalone = {
                         this is the content of artical one.this is the content of artical one.this is the content of artical one.
                         this is the content of artical one.this is the content of artical one.this is the content of artical one.
                     </p>
+                    
              `
+                        },
+        articaltwo : {
+            title: 'artical two | Sumanth Mylar',
+  heading: 'artical two',
+  date: 'august 03 2027',
+  content: `
+                    <p>
+                        this is the content of artical one.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.
+                    </p>
+                    <p>
+                        this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.this is the content of artical two.
+                    </p>
+        },  
 };
 function createTemplate (data) {
     var title = data.title;
