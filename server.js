@@ -6,8 +6,8 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articalone= {
-  title: 'artical one | SUmanth Mylar',
+var articalone = {
+  title: 'artical one | Sumanth Mylar',
   heading: 'artical one',
   date: 'august 03 2017',
   content: `
@@ -23,7 +23,7 @@ var articalone= {
                         this is the content of artical one.this is the content of artical one.this is the content of artical one.
                         this is the content of artical one.this is the content of artical one.this is the content of artical one.
                     </p>
-                  `
+             `
 };
 function createTemplate (data) {
     var title=data.title;
