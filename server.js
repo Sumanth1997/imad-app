@@ -14,7 +14,7 @@ app.get('/artical-one', function (req, res) {
 app.get('/artical-two', function (req, res) {
   res.send(path.join('this is the content for artical two'));
 });
-app.get('/', function (req, res) {
+app.get('/artical-three', function (req, res) {
   res.send(path.join('this is the content for artical-three'));
 });
 
