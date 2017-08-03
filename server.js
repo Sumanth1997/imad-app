@@ -24,7 +24,7 @@ var articalone= {
                         this is the content of artical one.this is the content of artical one.this is the content of artical one.
                     </p>`
 };
-function creatTemplate (data) {
+function createTemplate (data) {
     var title=data.title;
     var date=data.title;
     var heading=data.title;
