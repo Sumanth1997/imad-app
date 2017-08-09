@@ -18,6 +18,6 @@ button.onclick = function () {
   };
   //make a request
   request.open('GET','http://sumanthmylar.imad.hasura-app.io/',true);
-  request.send('null')
+  request.send('null');
  
 };
