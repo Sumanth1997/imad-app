@@ -97,7 +97,8 @@ app.get('/submit-name',function(req,res) {
     //json javascript object notation
     res.send(JSON.stringify(names));
 });
-app.get('/:articalName', function (req, res) {
+
+app.get('/:articalName', function(req, res) {
     //articalName == artical-one
     //articals[articalName == {} content object for artical one 
     var articalName = req.params.articalName;
