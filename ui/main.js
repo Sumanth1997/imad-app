@@ -17,7 +17,7 @@ button.onclick = function () {
     //not done yet
   };
   //make a request
-  request.open('GET','http://sumanthmylar.imad.hasura-app.io/counter',true);
+  request.open('GET','http://sumanthmylar.imad.hasura-app.io/counter'+name,true);
   request.send(null);
 };
 
