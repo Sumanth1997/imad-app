@@ -50,7 +50,7 @@ submit.onclick=function() {
     //not done yet
   };
   //make a request
-  request.open('GET','http://sumanthmylar.imad.hasura-app.io/counter'+name,true);
+  request.open('GET','http://sumanthmylar.imad.hasura-app.io/submit-name?name='+name,true);
   request.send(null);
 };
     //make a request to the server and send the name
