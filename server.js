@@ -97,7 +97,10 @@ app.get('/submit-name',function(req,res) {
     //json javascript object notation
     res.send(JSON.stringify(names));
 });
-
+app.get('/test-db',function(req,res) {
+//make a select request
+//return a response with the results
+});
 app.get('/:articalName', function(req, res) {
     //articalName == artical-one
     //articals[articalName == {} content object for artical one 
