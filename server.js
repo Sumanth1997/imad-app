@@ -1,6 +1,16 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var pool=require('pg').pool;
+
+
+var config ={
+    user:'sumanthmylar',
+    hostname:'sumanthmylar',
+    port:'5432',
+    password:process.env.DB_PASSWORD
+    
+};
 
 var app = express();
 app.use(morgan('combined'));
@@ -97,9 +107,25 @@ app.get('/submit-name',function(req,res) {
     //json javascript object notation
     res.send(JSON.stringify(names));
 });
-app.get('/test-db',function(req,res) {
+
+
+
+
+var pool=new pool(config);
+
+app.get('/test-db' , function (req, res) 
+{
 //make a select request
 //return a response with the results
+pool.query('SELECT *FROM test',function(err,result) {
+    if(err)
+    {
+        res.status(500).send(err.toString());
+        
+    } else {
+        res.send(JSON.stringify(result));
+    }
+   });
 });
 app.get('/:articalName', function(req, res) {
     //articalName == artical-one
